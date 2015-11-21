@@ -7,7 +7,8 @@ namespace Test.Controllers
         // GET: Preguntas
         public ActionResult Index()
         { 
-            ViewBag.Message = "Listado de Preguntas:";
+            ViewBag.Message     = "Listado de Preguntas:";
+            ViewBag.Preguntas   = "<ul><li>Listado Preguntas</li></ul>";
 
             return View();
         }
