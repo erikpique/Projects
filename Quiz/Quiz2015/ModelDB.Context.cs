@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test
+namespace Quiz2015
 {
     using System;
     using System.Data.Entity;

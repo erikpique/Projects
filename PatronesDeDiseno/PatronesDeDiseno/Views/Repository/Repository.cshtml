@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "Repository";
+}
+
+<h2>Repository</h2>
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Patrón Repository - @Html.ActionLink("Detalles", "Detalles","Repository")
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                <p class="text-justify">
+                    El patrón repositorio o repository pattern está íntimamente relacionado con el acceso a datos y nos permite tener una abstracción de la implementación de acceso a datos en nuestras aplicaciones, de modo que nuestra lógica de negocio no conozca ni esté acoplada a la fuente de datos. En pocas palabras esto quiere decir que el repositorio actúa como un intermediario entre nuestra lógica de negocio y nuestra lógica de acceso a datos para que se centralice en un solo punto, y de esta forma se logre evitar redundancia de código. Y como dije antes al ser una abstracción del acceso a datos nos permite desacoplar y testear de una forma más sencilla nuestro código, ya que al estar desacoplado podemos generar pruebas unitarias con mayor facilidad. Adicional al estar centralizado en un solo punto de acceso, podemos reutilizar nuestra lógica de acceso a datos desde cualquier cliente, es decir desde otras aplicaciones que tengamos en nuestro entorno corporativo, incluso desde una app móvil si exponemos los repositorios a través de Apis por ejemplo.
+                <p>
+            </div>
+        </div>
+        <div>
+            <p>
+            <img src="~/images/repository-aspnet-mvc.png" class="img-thumbnail">
+            <p/>
+        </div>
+    </div>
+</div>

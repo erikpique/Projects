@@ -145,7 +145,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Classes\Preguntas.cs" />
+    <Compile Include="Entities\Comentario.cs" />
+    <Compile Include="Entities\Preguntas.cs" />
     <Compile Include="comment.cs">
       <DependentUpon>ModelDB.tt</DependentUpon>
     </Compile>
@@ -170,7 +171,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelDB.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\PreguntaModel.cs" />
     <Compile Include="pregunta.cs">
       <DependentUpon>ModelDB.tt</DependentUpon>
     </Compile>
@@ -251,6 +251,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

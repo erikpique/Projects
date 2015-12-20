@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Test.Controllers
+namespace Quiz2015.Controllers
 {
     public class TemasController : Controller
     {

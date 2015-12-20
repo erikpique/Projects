@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Test.Classes
+namespace Quiz2015.Pregunta
 {
     public class Preguntas
     {
@@ -17,7 +17,5 @@ namespace Test.Classes
             this.Respuesta = respuesta;
             this.Tema = tema;
         }
-
-        public abstract void mostrarPreguntas();
     }
 }
