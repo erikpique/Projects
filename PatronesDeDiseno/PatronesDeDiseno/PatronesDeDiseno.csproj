@@ -130,8 +130,6 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatronesController.cs" />
-    <Compile Include="Controllers\RepositoryController.cs" />
-    <Compile Include="Controllers\SingletonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,11 +169,12 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Repository\Repository.cshtml" />
+    <Content Include="Views\Patrones\Repository\Repository.cshtml" />
     <Content Include="Views\Patrones\Patrones.cshtml" />
-    <Content Include="Views\Singleton\Singleton.cshtml" />
-    <Content Include="Views\Repository\Detalles.cshtml" />
-    <Content Include="Views\Repository\Edit.cshtml" />
+    <Content Include="Views\Patrones\Singleton\Singleton.cshtml" />
+    <Content Include="Views\Patrones\Repository\RepositoryDetalles.cshtml" />
+    <Content Include="Views\Patrones\Repository\RepositoryEdit.cshtml" />
+    <Content Include="Views\Patrones\AbstractFactory\AbstractFactory.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

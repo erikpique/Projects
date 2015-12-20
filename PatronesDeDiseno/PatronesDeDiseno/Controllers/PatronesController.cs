@@ -8,5 +8,20 @@ namespace PatronesDeDiseno.Controllers
         {
             return View();
         }
+
+        public ActionResult Repository()
+        {
+            return View("~/Views/Patrones/Repository/Repository.cshtml");
+        }
+
+        public ActionResult AbstractFactory()
+        {
+            return View("~/Views/Patrones/AbstractFactory/AbstractFactory.cshtml");
+        }
+
+        public ActionResult Singleton()
+        {
+            return View("~/Views/Patrones/Singleton/Singleton.cshtml");
+        }
     }
 }
