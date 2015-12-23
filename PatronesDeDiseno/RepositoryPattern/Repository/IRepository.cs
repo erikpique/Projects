@@ -2,12 +2,12 @@
 
 namespace RepositoryPattern.Repository
 {
-    public interface IRepository<TEnt, in TPk> where TEnt : class
+    public interface IRepository<Anuncios>
     {
-        IEnumerable<TEnt> Get();
-        TEnt Get(TPk id);
-        void Add(TEnt entity);
-        void Remove(TEnt entity);
-        void Update(TEnt entity);
+        IEnumerable<Anuncios> Get();
+        Anuncios Get(int? id);
+        void Add(Anuncios entity);
+        void Remove(Anuncios entity);
+        void Update(Anuncios entity);
     }
 }

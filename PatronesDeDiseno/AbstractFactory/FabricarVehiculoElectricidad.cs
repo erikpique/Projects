@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory
 {
     public class FabricarVehiculoElectricidad : IFabricarVehiculo
     {

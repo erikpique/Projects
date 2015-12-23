@@ -14,7 +14,7 @@ namespace RepositoryPattern.Model
     
     public partial class Anuncios
     {
-        public int Id { get; set; }
+        public int Id { get; set;  }
         public string Anuncio { get; set; }
         public string Autor { get; set; }
         public string Email { get; set; }

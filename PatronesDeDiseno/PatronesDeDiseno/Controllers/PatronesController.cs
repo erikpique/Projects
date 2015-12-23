@@ -23,5 +23,10 @@ namespace PatronesDeDiseno.Controllers
         {
             return View("~/Views/Patrones/Singleton/Singleton.cshtml");
         }
+
+        public ActionResult AnunciosIndex()
+        {
+            return View("~/Views/Patrones/Repository/Anuncios/Index.cshtml");
+        }
     }
 }

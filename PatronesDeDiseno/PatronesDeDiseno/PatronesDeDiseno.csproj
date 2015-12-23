@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AnunciosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PatronesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -172,9 +173,12 @@
     <Content Include="Views\Patrones\Repository\Repository.cshtml" />
     <Content Include="Views\Patrones\Patrones.cshtml" />
     <Content Include="Views\Patrones\Singleton\Singleton.cshtml" />
-    <Content Include="Views\Patrones\Repository\RepositoryDetalles.cshtml" />
-    <Content Include="Views\Patrones\Repository\RepositoryEdit.cshtml" />
     <Content Include="Views\Patrones\AbstractFactory\AbstractFactory.cshtml" />
+    <Content Include="Views\Anuncios\Create.cshtml" />
+    <Content Include="Views\Anuncios\Delete.cshtml" />
+    <Content Include="Views\Anuncios\Details.cshtml" />
+    <Content Include="Views\Anuncios\Edit.cshtml" />
+    <Content Include="Views\Anuncios\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -25,7 +25,7 @@ namespace RepositoryPattern.Model
             throw new UnintentionalCodeFirstException();
         }
     
-        public DbSet<Anuncios> Anuncioss { get; set; }
+        public DbSet<Anuncios> Anuncios1 { get; set; }
         public DbSet<TipoAnuncio> TipoAnuncios { get; set; }
     }
 }

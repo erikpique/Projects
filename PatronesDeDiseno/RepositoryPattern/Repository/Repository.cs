@@ -1,40 +1,49 @@
 ﻿using System.Collections.Generic;
-using System.Data.Entity.Infrastructure;
+using System.Data;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using RepositoryPattern.Model;
 
 namespace RepositoryPattern.Repository
 {
-    public class Repository : IRepository<Anuncios, int>
+    public class Repository : IRepository<Anuncios>
     {
-        public EntitiesDB context { get; set; }
+        private EntitiesDB context = new EntitiesDB();
         public IEnumerable<Anuncios> Get()
         {
-            return context.Anuncioss.ToList();
+            return context.Anuncios1.ToList();
         }
 
-        public Anuncios Get(int id)
+        public Anuncios Get(int? id)
         {
-            return context.Anuncioss.Find(id);
+            return context.Anuncios1.Find(id);
         }
 
         public void Add(Anuncios entity)
         {
-            context.Anuncioss.Add(entity);
+            var obj = new Anuncios()
+            {
+                Autor = entity.Autor,
+                Anuncio = entity.Anuncio,
+                Email = entity.Email,
+                Tipo = entity.Tipo
+            };
+            
+            context.Anuncios1.Add(obj);
             context.SaveChanges();
         }
 
         public void Remove(Anuncios entity)
         {
-            var obj = context.Anuncioss.Find(entity.Id);
-            context.Anuncioss.Remove(obj);
+            var obj = context.Anuncios1.Find(entity.Id);
+            context.Anuncios1.Remove(obj);
             context.SaveChanges();
         }
 
         public void Update(Anuncios entity)
         {
-            throw new System.NotImplementedException();
+            var obj = context.Anuncios1.Find(entity.Id);
+            context.Entry(obj).State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }

@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="Id" />
           </Key>
-          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Anuncio" Type="varchar(max)" Nullable="false" />
           <Property Name="Autor" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Email" Type="varchar" MaxLength="50" Nullable="false" />
@@ -19,7 +19,7 @@
           <Key>
             <PropertyRef Name="IdTipo" />
           </Key>
-          <Property Name="IdTipo" Type="int" Nullable="false" />
+          <Property Name="IdTipo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Tipo" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityContainer Name="DBModelStoreContainer">
