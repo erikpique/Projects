@@ -11,17 +11,17 @@ namespace PatronesDeDiseno.Controllers
 
         public ActionResult Repository()
         {
-            return View("~/Views/Patrones/Repository/Repository.cshtml");
+            return View();
         }
 
         public ActionResult AbstractFactory()
         {
-            return View("~/Views/Patrones/AbstractFactory/AbstractFactory.cshtml");
+            return View();
         }
 
         public ActionResult Singleton()
         {
-            return View("~/Views/Patrones/Singleton/Singleton.cshtml");
+            return View();
         }
 
         public ActionResult AnunciosIndex()
